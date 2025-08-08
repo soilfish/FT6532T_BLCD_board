@@ -357,11 +357,11 @@ void Speed_response(void)
 {
     static int8 OpenLoopIqIncCnt = 0;
 
-    //遥控更新转速 20250508 BY LIJIE IR 
+    //遥控更新转速 20250508 IR 
 //    if (IRControl.FlagSpeed)
 //    {
 //    	MCCtrl.TargetValue = IRControl.SpeedLevel[IRControl.TargetSpeed];//给定转速=速度转换【档位】
-//    	IRControl.FlagSpeed = 0; //clear ir key respone flag BY lijie
+//    	IRControl.FlagSpeed = 0; //clear ir key respone flag 
 //    }
     
     if ((mcState == mcRun) || (mcState == mcStop))
@@ -903,7 +903,7 @@ void PLLStateFunction(void)
 	}
 }
 
-//ADC 电压检测 20250625 BY LIJIE
+//ADC 电压检测 20250625
 //void BAT_Voltage(void)
 //{
 //    if ( BAT.Voltage.DectDealyCnt < 100 )
